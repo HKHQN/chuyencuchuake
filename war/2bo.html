@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pain Lục Đạo • Ưu & Nhược Điểm Chi Tiết</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://images.alphacoders.com/604/thumb-1920-604626.png">
+    <link rel="apple-touch-icon" href="https://images.alphacoders.com/604/thumb-1920-604626.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Orbitron:wght@500;700&display=swap');
+        
+        :root {
+            --pain-red: #c1121f;
+            --pain-dark: #0f0f11;
+            --pain-gray: #1a1a1e;
+            --pain-light: #e5e5e7;
+        }
+        
+        body {
+            font-family: 'Roboto Condensed', system-ui, sans-serif;
+            background-color: var(--pain-dark);
+            color: var(--pain-light);
+            scroll-behavior: smooth;
+        }
+        
+        .title-font {
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        .hero {
+            background: linear-gradient(to bottom, rgba(15,15,17,0.92), rgba(15,15,17,0.98)),
+                        url('https://static.wikia.nocookie.net/naruto/images/d/db/Pein_Rikud%C5%8D.png/revision/latest?cb=20150127162053') center/cover no-repeat fixed;
+        }
+        
+        .card {
+            transition: all 0.35s ease;
+            background: rgba(26,26,30,0.85);
+            backdrop-filter: blur(6px);
+            border: 1px solid rgba(193,18,31,0.18);
+        }
+        
+        .card:hover {
+            transform: translateY(-12px);
+            border-color: var(--pain-red);
+            box-shadow: 0 20px 40px rgba(193,18,31,0.15);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60%;
+            height: 3px;
+            background: linear-gradient(to right, var(--pain-red), transparent);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="bg-black/80 backdrop-blur-md border-b border-red-900/30 fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="https://images.alphacoders.com/604/thumb-1920-604626.png" alt="Akatsuki" class="w-10 h-10 rounded-full border-2 border-red-800/50">
+                <span class="title-font text-2xl font-bold tracking-wider text-red-500">PAIN</span>
+                <span class="title-font text-2xl font-bold tracking-wider">LỤC ĐẠO</span>
+            </div>
+            
+            <div class="hidden md:flex gap-8 font-medium">
+                <a href="#home" class="hover:text-red-400 transition">Trang chủ</a>
+                <a href="#paths" class="hover:text-red-400 transition">Lục Đạo</a>
+                <a href="#pros" class="hover:text-red-400 transition">Ưu điểm</a>
+                <a href="#cons" class="hover:text-red-400 transition">Nhược điểm</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero min-h-screen flex items-center pt-24">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h1 class="title-font text-6xl md:text-8xl font-black mb-6 leading-none text-white drop-shadow-2xl">
+                PAIN LỤC ĐẠO
+            </h1>
+            <p class="text-2xl md:text-3xl text-red-300 mb-10 font-light">
+                Ưu & Nhược điểm chi tiết – Rinnegan Six Paths
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="#paths" class="px-10 py-5 bg-red-700 hover:bg-red-600 transition rounded-lg font-bold text-lg flex items-center gap-3 shadow-lg">
+                    Khám phá Lục Đạo <i class="fa-solid fa-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Giới thiệu ngắn -->
+    <section class="py-20 bg-black/40">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="title-font text-5xl font-bold mb-8 section-title">Pain Lục Đạo – Sức mạnh tối thượng của Akatsuki</h2>
+            <p class="text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto">
+                Nagato sử dụng Rinnegan để điều khiển 6 thân xác (Six Paths of Pain), mỗi thân mang một khả năng riêng biệt từ sáu cõi luân hồi. 
+                Đây là một trong những kỹ thuật mạnh mẽ và đáng sợ nhất series Naruto, từng hủy diệt gần như toàn bộ Làng Lá chỉ trong một ngày.
+            </p>
+        </div>
+    </section>
+
+    <!-- Lục Đạo -->
+    <section id="paths" class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="title-font text-5xl font-bold text-center mb-16 section-title">Sáu Thân Xác – Sáu Sức Mạnh</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Thiên Đạo -->
+                <div class="card rounded-2xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-blue-900 to-cyan-900 relative">
+                        <img src="https://static0.cbrimages.com/wordpress/wp-content/uploads/2021/10/pain-six-paths-from-naruto.jpg?w=1200&h=628&fit=crop" 
+                             alt="Thiên Đạo" class="w-full h-full object-cover opacity-90">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black/40">
+                            <span class="text-6xl drop-shadow-2xl">🌌</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Thiên Đạo (Deva Path)</h3>
+                        <p class="text-red-400 mb-4">Trọng lực & Hấp dẫn</p>
+                        <p class="text-gray-300 mb-6">Shinra Tensei, Banshō Ten'in, Chibaku Tensei – vũ khí hủy diệt diện rộng.</p>
+                        
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div>
+                                <p class="font-semibold text-emerald-400 mb-2">Ưu điểm</p>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Phòng thủ tuyệt đối</li>
+                                    <li>Tạo thiên thạch khổng lồ</li>
+                                    <li>Tầm ảnh hưởng lớn</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-red-400 mb-2">Nhược điểm</p>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Hồi chiêu 5 giây</li>
+                                    <li>Tiêu hao chakra cực lớn</li>
+                                    <li>Dễ bị đánh úp khi cooldown</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Asura Đạo -->
+                <div class="card rounded-2xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-orange-900 to-red-900 relative">
+                        <img src="https://comicbook.com/wp-content/uploads/sites/4/2025/03/Naruto-Pain-missing-nin.jpg" 
+                             alt="Asura Đạo" class="w-full h-full object-cover opacity-90">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black/40">
+                            <span class="text-6xl drop-shadow-2xl">🔧</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Asura Đạo (Asura Path)</h3>
+                        <p class="text-red-400 mb-4">Vũ khí cơ giới</p>
+                        <p class="text-gray-300 mb-6">Biến hình thành súng, tên lửa, lưỡi cưa – hỏa lực cực mạnh.</p>
+                        
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div>
+                                <p class="font-semibold text-emerald-400 mb-2">Ưu điểm</p>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Hỏa lực tầm xa khủng khiếp</li>
+                                    <li>Bay và tấn công liên tục</li>
+                                    <li>Sức mạnh vật lý cao</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-red-400 mb-2">Nhược điểm</p>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Dễ bị phá hủy cơ thể</li>
+                                    <li>Không phòng thủ chakra</li>
+                                    <li>Yếu trước taijutsu mạnh</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nhân Đạo -->
+                <div class="card rounded-2xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-purple-900 to-violet-900 relative">
+                        <img src="https://static.wikia.nocookie.net/naruto/images/3/3a/Six_Paths_Pain.png/revision/latest?cb=20150131223520" 
+                             alt="Nhân Đạo" class="w-full h-full object-cover opacity-90">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black/40">
+                            <span class="text-6xl drop-shadow-2xl">🧠</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Nhân Đạo (Human Path)</h3>
+                        <p class="text-red-400 mb-4">Hút linh hồn</p>
+                        <p class="text-gray-300 mb-6">Chạm tay lấy linh hồn và ký ức – tra tấn & thu thập thông tin.</p>
+                        
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div>
+                                <p class="font-semibold text-emerald-400 mb-2">Ưu điểm</p>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Giết tức thì khi chạm</li>
+                                    <li>Lấy toàn bộ ký ức</li>
+                                    <li>Tiêu hao chakra thấp</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-red-400 mb-2">Nhược điểm</p>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Phải tiếp cận gần</li>
+                                    <li>Không tấn công tầm xa</li>
+                                    <li>Yếu trước tốc độ cao</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Súc Sinh Đạo -->
+                <div class="card rounded-2xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-green-900 to-emerald-900 relative">
+                        <img src="https://preview.redd.it/fan-art-six-paths-of-pain-v0-eb9jn22mq5i51.jpg?width=1920&format=pjpg&auto=webp&s=85b544b6e78e78167831601ad1437359c150b4dc" 
+                             alt="Súc Sinh Đạo" class="w-full h-full object-cover opacity-90">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black/40">
+                            <span class="text-6xl drop-shadow-2xl">🐉</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Súc Sinh Đạo (Animal Path)</h3>
+                        <p class="text-red-400 mb-4">Triệu hồi thú</p>
+                        <p class="text-gray-300 mb-6">Triệu hồi liên tục các quái thú khổng lồ hỗ trợ chiến đấu.</p>
+                        
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div>
+                                <p class="font-semibold text-emerald-400 mb-2">Ưu điểm</p>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Số lượng áp đảo</li>
+                                    <li>Thú có thể chở các đạo khác</li>
+                                    <li>Triệu hồi nhanh</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-red-400 mb-2">Nhược điểm</p>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Thú dễ bị Rasengan tiêu diệt</li>
+                                    <li>Yếu trước đòn AoE</li>
+                                    <li>Không phòng thủ tốt</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ngạ Quỷ Đạo -->
+                <div class="card rounded-2xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-amber-900 to-yellow-900 relative">
+                        <img src="https://s.yimg.com/ny/api/res/1.2/A4EzkePSN6Vy2RthL8dHIA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTIwNDg7aD0xMTUyO2NmPXdlYnA-/https://media.zenfs.com/en/comingsoon_net_477/a70cae6dbeac4223fe3fd44901af57a3" 
+                             alt="Ngạ Quỷ Đạo" class="w-full h-full object-cover opacity-90">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black/40">
+                            <span class="text-6xl drop-shadow-2xl">🍴</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Ngạ Quỷ Đạo (Preta Path)</h3>
+                        <p class="text-red-400 mb-4">Hấp thụ chakra</p>
+                        <p class="text-gray-300 mb-6">Hút sạch chakra mọi ninjutsu – phòng thủ hoàn hảo trước phép thuật.</p>
+                        
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div>
+                                <p class="font-semibold text-emerald-400 mb-2">Ưu điểm</p>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Chặn mọi ninjutsu</li>
+                                    <li>Hấp thụ Rasengan, Chidori</li>
+                                    <li>Tự hồi phục khi hút chakra</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-red-400 mb-2">Nhược điểm</p>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Không hút chakra tự nhiên</li>
+                                    <li>Yếu trước taijutsu</li>
+                                    <li>Phải chủ động tiếp xúc</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Địa Ngục Đạo -->
+                <div class="card rounded-2xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-rose-900 to-red-900 relative">
+                        <img src="https://static0.cbrimages.com/wordpress/wp-content/uploads/2022/02/Naruto-The-Six-Path-of-Pain-1.jpg?w=1200&h=675&fit=crop" 
+                             alt="Địa Ngục Đạo" class="w-full h-full object-cover opacity-90">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black/40">
+                            <span class="text-6xl drop-shadow-2xl">🔥</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Địa Ngục Đạo (Naraka Path)</h3>
+                        <p class="text-red-400 mb-4">Vua Địa Ngục</p>
+                        <p class="text-gray-300 mb-6">Phục hồi tức thì các đạo khác & tra tấn linh hồn lấy thông tin.</p>
+                        
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div>
+                                <p class="font-semibold text-emerald-400 mb-2">Ưu điểm</p>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Phục hồi siêu tốc</li>
+                                    <li>Tạo cảm giác bất tử</li>
+                                    <li>Tra tấn & lấy thông tin</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-red-400 mb-2">Nhược điểm</p>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Bản thân yếu tấn công</li>
+                                    <li>Phải triệu hồi Vua Địa Ngục</li>
+                                    <li>Dễ bị phá khi triệu hồi</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ưu điểm tổng thể -->
+    <section id="pros" class="py-20 bg-black/60">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="title-font text-5xl font-bold text-center mb-16 section-title text-emerald-400">Ưu Điểm Nổi Bật</h2>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="card p-8 rounded-2xl">
+                    <div class="text-6xl text-emerald-500 mb-6"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">Phòng thủ & Tấn công đa dạng</h3>
+                    <p class="text-gray-300">Kết hợp 6 loại sức mạnh Rinnegan: trọng lực, hấp thụ, triệu hồi, cơ giới, linh hồn, phục hồi – gần như không có điểm mù.</p>
+                </div>
+                
+                <div class="card p-8 rounded-2xl">
+                    <div class="text-6xl text-emerald-500 mb-6"><i class="fa-solid fa-eye"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">Tầm nhìn chia sẻ 360°</h3>
+                    <p class="text-gray-300">Cả 6 đạo nhìn chung một lúc → gần như không thể bị đánh lén hay bao vây.</p>
+                </div>
+                
+                <div class="card p-8 rounded-2xl">
+                    <div class="text-6xl text-emerald-500 mb-6"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">Khả năng phục hồi gần như bất tử</h3>
+                    <p class="text-gray-300">Địa Ngục Đạo sửa chữa mọi hư hại trong vài giây – tạo cảm giác bất khả chiến bại.</p>
+                </div>
+                
+                <div class="card p-8 rounded-2xl">
+                    <div class="text-6xl text-emerald-500 mb-6"><i class="fa-solid fa-bolt"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">Sức mạnh áp đảo diện rộng</h3>
+                    <p class="text-gray-300">Shinra Tensei + Chibaku Tensei + triệu hồi + hỏa lực → có thể tiêu diệt cả một ngôi làng lớn.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nhược điểm tổng thể -->
+    <section id="cons" class="py-20">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="title-font text-5xl font-bold text-center mb-16 section-title text-red-400">Nhược Điểm Chí Mạng</h2>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="card p-8 rounded-2xl">
+                    <div class="text-6xl text-red-500 mb-6"><i class="fa-solid fa-link"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">Phụ thuộc hoàn toàn vào Nagato</h3>
+                    <p class="text-gray-300">Nagato yếu ớt, nằm một chỗ. Nếu tìm được và tiêu diệt Nagato → toàn bộ Lục Đạo sụp đổ ngay lập tức.</p>
+                </div>
+                
+                <div class="card p-8 rounded-2xl">
+                    <div class="text-6xl text-red-500 mb-6"><i class="fa-solid fa-clock"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">Thời gian hồi chiêu lớn</h3>
+                    <p class="text-gray-300">Shinra Tensei lớn cần 5 giây hồi chiêu – Naruto đã lợi dụng kẽ hở này để phản công.</p>
+                </div>
+                
+                <div class="card p-8 rounded-2xl">
+                    <div class="text-6xl text-red-500 mb-6"><i class="fa-solid fa-ban"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">Yếu trước Sage Mode & Taijutsu</h3>
+                    <p class="text-gray-300">Ngạ Quỷ Đạo không hút được chakra tự nhiên → Naruto Sage Mode là khắc tinh hoàn hảo.</p>
+                </div>
+                
+                <div class="card p-8 rounded-2xl">
+                    <div class="text-6xl text-red-500 mb-6"><i class="fa-solid fa-bomb"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">Dễ bị tiêu diệt hàng loạt</h3>
+                    <p class="text-gray-300">Rasenshuriken hoặc Chibaku Tensei ngược có thể quét sạch nhiều đạo cùng lúc.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-red-900/30 text-center">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-center items-center gap-3 mb-6">
+                <img src="https://images.alphacoders.com/604/thumb-1920-604626.png" alt="Akatsuki" class="w-12 h-12 rounded-full">
+                <span class="title-font text-3xl font-bold text-red-500">PAIN LỤC ĐẠO</span>
+            </div>
+            <p class="text-gray-500 text-sm">Phân tích chi tiết ưu nhược điểm dựa trên Naruto Shippuden • Thiết kế giao diện đơn giản, dễ đọc</p>
+            <p class="text-xs text-gray-700 mt-4">© 2026 – Fan-made by Grok</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll cho các link
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
